@@ -1,0 +1,37 @@
+name: booky
+description: Find your favorite books
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.2
+  http: ^0.13.4
+  flutter_dotenv: ^5.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter_icons:
+  android: "launcher_icon"
+#  ios: true
+  image_path: "assets/icon/foreground.png"
+  adaptive_icon_foreground: "assets/icon/foreground.png"
+  adaptive_icon_background: "#4C63BD"
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/cover_placeholder.png
